@@ -1,13 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afton site</title>
-    
+    <title>سیستم پیام‌رسان ساده</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        #messages {
+            border: 1px solid #ccc;
+            padding: 10px;
+            height: 300px;
+            overflow-y: scroll;
+            margin-bottom: 10px;
+        }
+        .message {
+            padding: 5px;
+            border-bottom: 1px solid #eee;
+        }
+    </style>
 </head>
 <body>
-    <h1>سام گی شد</h1>
-    <script src="script.js"></script>
+    <h1>پیام‌رسان ساده</h1>
+    <div id="messages"></div> <!-- جایی که پیام‌ها نمایش داده می‌شوند -->
+    <input type="text" id="messageInput" placeholder="پیام خود را وارد کنید..." />
+    <button onclick="sendMessage()">ارسال</button>
+
+    <script>
+        function sendMessage() {
+            // دریافت متن پیام از input
+            const messageInput = document.getElementById("messageInput");
+            const messageText = messageInput.value;
+
+            // اگر ورودی خالی باشد، هیچ کاری انجام نده
+            if (messageText.trim() === "") {
+                return;
+            }
+
+            // ایجاد عنصر جدید برای نمایش پیام
+            const messageElement = document.createElement("div");
+            messageElement.className = "message";
+            messageElement.innerText = messageText;
+
+            // اضافه کردن پیام به بخش نمایش پیام‌ها
+            const messagesDiv = document.getElementById("messages");
+            messagesDiv.appendChild(messageElement);
+
+            // پاک کردن ورودی بعد از ارسال پیام
+            messageInput.value = "";
+
+            // اسکرول به پایین برای نمایش آخرین پیام
+            messagesDiv.scrollTop = messagesDiv.scrollHeight;
+        }
+    </script>
 </body>
 </html>
