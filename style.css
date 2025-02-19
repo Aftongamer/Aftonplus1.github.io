@@ -1,0 +1,76 @@
+#p1{
+    color: black;
+    font-size: 50px;
+    text-shadow: 2px 2px 4px rgb(110, 110, 110);
+    font-family: fontyab;
+}
+
+#div1{
+    text-align: center;
+}
+@font-face {
+    font-family: fontyab;
+    src: url(IranNastaliq.ttf);
+}
+@font-face {
+    font-family: fontyab2;
+    src: url(Dirooz.ttf);
+}
+#img1{
+    margin-top: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 200px;
+    border: 5px solid rgb(201, 201, 201);
+}
+#div2{
+    display: flex;
+    direction: rtl;
+    box-sizing: border-box;
+}
+#text2{
+    border-top-left-radius: 10px;
+    border-end-end-radius: 10px;
+    border-top-right-radius: 10px;
+    padding: 10px;
+    background-color: rgb(0, 153, 255);
+    font-size: 20px;
+    font-family: fontyab2;
+    margin-right: 10px;
+
+}
+.button1{
+    text-align: center;
+    
+    
+}
+.button1 a{
+    
+    box-shadow: 2px 2px 4px rgb(158, 158, 158);
+    color: black;
+    text-decoration: none;
+    background-color: aquamarine;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: fontyab2;
+}
+.button1 a:hover{
+    color: rgb(112, 214, 53);
+    background-color: blueviolet;
+}
+ul{
+    margin-top: 30px;
+    background-color: rgb(43, 226, 104);
+    list-style-type: none;
+    padding: 5px;
+}
+li{
+    font-family: fontyab2;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 4px;
+    margin: 5px;
+    background-color: aliceblue;
+}

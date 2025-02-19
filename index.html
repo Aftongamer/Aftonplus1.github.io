@@ -1,59 +1,37 @@
 <!DOCTYPE html>
-<html lang="fa">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>سیستم پیام‌رسان ساده</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        #messages {
-            border: 1px solid #ccc;
-            padding: 10px;
-            height: 300px;
-            overflow-y: scroll;
-            margin-bottom: 10px;
-        }
-        .message {
-            padding: 5px;
-            border-bottom: 1px solid #eee;
-        }
-    </style>
+    <title>Afton</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>پیام‌رسان ساده</h1>
-    <div id="messages"></div> <!-- جایی که پیام‌ها نمایش داده می‌شوند -->
-    <input type="text" id="messageInput" placeholder="پیام خود را وارد کنید..." />
-    <button onclick="sendMessage()">ارسال</button>
+    <div id="div1">
+        <p id="p1">بسم الله الحرمان الرحیم</p>
+        
+    </div>
+    <div id="div2">
+        <div id="div3">
+            <img id="img1" src="icon.jpg" alt="">
 
-    <script>
-        function sendMessage() {
-            // دریافت متن پیام از input
-            const messageInput = document.getElementById("messageInput");
-            const messageText = messageInput.value;
-
-            // اگر ورودی خالی باشد، هیچ کاری انجام نده
-            if (messageText.trim() === "") {
-                return;
-            }
-
-            // ایجاد عنصر جدید برای نمایش پیام
-            const messageElement = document.createElement("div");
-            messageElement.className = "message";
-            messageElement.innerText = messageText;
-
-            // اضافه کردن پیام به بخش نمایش پیام‌ها
-            const messagesDiv = document.getElementById("messages");
-            messagesDiv.appendChild(messageElement);
-
-            // پاک کردن ورودی بعد از ارسال پیام
-            messageInput.value = "";
-
-            // اسکرول به پایین برای نمایش آخرین پیام
-            messagesDiv.scrollTop = messagesDiv.scrollHeight;
-        }
-    </script>
+        </div>
+        <div id="4">
+            <p id="text2">
+                در اینجا میتونید خدمات من رو ببینید
+            </p>
+        </div>
+        
+    </div>
+    <div class="button1">
+        <a href="https://t.me/Aftonplus">کانال ما</a>
+        <a href="https://t.me/Aftonplus1">پشتیبانی</a>
+    </div>
+    <ul>
+        <li>خانه</li>
+        <li>قوانین</li>
+        <li>خدمات و فروشگاه</li>
+    </ul>
+    
 </body>
 </html>
