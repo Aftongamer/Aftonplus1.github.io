@@ -3,7 +3,7 @@
     font-size: 50px;
     text-shadow: 2px 2px 4px rgb(110, 110, 110);
     font-family: fontyab;
-    transition: all 10s;
+    transition: all 11s;
 
 }
 #divbutton{
@@ -36,6 +36,7 @@
     font-size: 20px;
     padding: 20px;
     border-radius: 10px;
+    transition: all 11s;
     font-family: fontyab2;
     animation: slideDown 1s ease-out forwards;
 }
@@ -64,7 +65,7 @@ ul{
     background-color: rgb(43, 101, 226);
     list-style-type: none;
     padding: 5px;
-    
+    border-radius: 5px;
 }
 li{
     font-family: fontyab2;
