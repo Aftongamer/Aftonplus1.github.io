@@ -16,10 +16,18 @@
         opacity: 1;
     }
 }
-#divbutton{
-    text-align: center;
+.divbutton{
+    display: inline-block;
+    background-color: aquamarine;
+    width: 100%;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 2px 2px 1px rgb(1, 255, 221);
+    font-size: 30px;
+    font-family: fontyab;
     
 }
+
 #div1{
     text-align: center;
 
@@ -46,7 +54,7 @@
     font-size: 20px;
     padding: 20px;
     border-radius: 10px;
-    transition: all 11s;
+    transition: all 0.5;
     font-family: fontyab2;
     animation: slideDown 1s ease-out forwards;
 }
@@ -94,4 +102,23 @@ li{
     background-color: rgb(49, 87, 255);
     border-radius: 5px;
     box-shadow: 4px 4px 2px rgb(32, 113, 219);
+    transition: all 1s;
+}
+#button2:hover{
+    background-color: rgb(221, 0, 0);
+    color: rgb(0, 0, 0);
+    transition: all 1s;
+    box-shadow: 2px 2px 3px red;
+}
+#divopen{
+    font-family: fontyab2;
+    font-size: 10px;
+    background-color: red;
+    padding: 1px;
+    margin-top: 20px;
+    text-align: center;
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(202, 202, 202);
 }
