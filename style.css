@@ -19,7 +19,7 @@
 .divbutton{
     display: inline-block;
     background-color: aquamarine;
-    width: 100%;
+    display: block;
     border-radius: 5px;
     padding: 20px;
     box-shadow: 2px 2px 1px rgb(1, 255, 221);
