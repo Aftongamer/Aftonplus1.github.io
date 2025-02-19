@@ -1,10 +1,20 @@
 #p1{
     color: black;
-    font-size: 50px;
+    font-size: 30px;
     text-shadow: 2px 2px 4px rgb(110, 110, 110);
     font-family: fontyab;
-    transition: all 11s;
-
+    animation: slideDown2 1s ease-out forwards;
+    margin-top: 0;
+}
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 #divbutton{
     text-align: center;
@@ -81,7 +91,7 @@ li{
     padding: 20px;
     font-family: fontyab;
     font-size: 20px;
-    background-color: red;
+    background-color: rgb(49, 87, 255);
     border-radius: 5px;
-    box-shadow: 4px 4px 2px rgb(255, 101, 101);
+    box-shadow: 4px 4px 2px rgb(32, 113, 219);
 }
