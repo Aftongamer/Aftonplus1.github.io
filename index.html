@@ -1,11 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Afton</title>
+    <title>ارسال پیام به ربات تلگرام</title>
 </head>
 <body>
-   <h1>Hi my name is Afton </h1>
+    <h1>ارسال پیام به ربات تلگرام</h1>
+    <button id="sendMessage">ارسال پیام</button>
+
+    <script>
+        document.getElementById('sendMessage').addEventListener('click', function() {
+            const TOKEN = '7130644864:AAHhGscjNoEYWZOyogRC0GFu4HP_3gqBvi4';
+            const CHAT_ID = '-1002416488822';
+            const MESSAGE = 'فردی روی دکمه ای کلیک کرد';
+
+            const url = https://api.telegram.org/bot${TOKEN}/sendMessage;
+
+            fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    chat_id: CHAT_ID,
+                    text: MESSAGE
+                })
+            })
+            .then(response => response.json())
+            .then(data => {
+                if (data.ok) {
+                    alert('پیام با موفقیت ارسال شد!');
+                } else {
+                    alert('خطا در ارسال پیام: ' + data.description);
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('خطا در ارسال پیام');
+            });
+        });
+    </script>
 </body>
 </html>
